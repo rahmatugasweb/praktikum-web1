@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar DOM</title>
+  </head>
+  <body>
+    <h1
+      id="uji_heading"
+      onmouseover="sorot(this)"
+      onmouseout="keluarSorot(this)"
+    >
+      Sorot dong!
+    </h1>
+    <p id="uji_paragraf"></p>
+
+    <script>
+      function sorot(obj) {
+        ocj.innerHTML = "Sudah disorot";
+      }
+      function keluarSorot(obj) {
+        obj.innerHTML = "Sorot lagi dong!";
+      }
+    </script>
+
+    <script>
+      ujiHeading = document.getElementById("uji_heading");
+      ujiParagraf = document.getElementById("uji_paragraf");
+      ujiInput = document.getElementById("uji_input");
+
+      ujiHeading.innerHTML = "Judul";
+      ujiParagraf.innerHTML = "Paragraf";
+      ujiInput.innerHTML = "Input";
+    </script>
+  </body>
+</html>
